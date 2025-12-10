@@ -6,6 +6,7 @@
     --secondary-color: #141413;
     --secondary-muted-color: #3d3d3a;
     --accent-color: #d97757;
+    --accent-muted-color: #c05d3f;
     --bg-color: #f0eee6;
 }
 
@@ -43,13 +44,23 @@ h1, h2, h3, h4, h5, h6 {
    Components
    =================== */
 .btn-primary {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary-muted-color);
-    border-color: var(--secondary-muted-color);
+    background-color: var(--accent-muted-color);
+    border-color: var(--accent-muted-color);
+}
+
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:first-child:active,
+.btn-primary:focus-visible {
+    background-color: var(--accent-muted-color) !important;
+    border-color: var(--accent-muted-color) !important;
+    box-shadow: none !important;
 }
 
 .card {

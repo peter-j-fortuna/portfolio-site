@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="assets/favicon.ico">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,7 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <div id="main-content">
     <div class="container">
         <div class="text-center mt-5 mb-5">
             <h1 id="greeting">Hello!</h1>
@@ -28,7 +29,7 @@
                     <br><br>
                     Previously, he worked as a software engineer at Paramount+ and DriveWealth. He is currently working at Corporate Traditions, developing new corporate gifting products and features. He thrives best in envorinments where developers have a strong sense of ownership and feels grateful to be part of a team that shares this mindset.
                     <br><br>
-                    In his free time, you can find him jogging around Prospect Park, listening to podcasts, or rearraning the furniture in his apartment again. You can find some of the projects he's been tinkering with below, or ask his RAG enabled personal assistant any questions you might have about his profile.
+                    In his free time, you can find him jogging around Prospect Park, listening to podcasts, or rearraning the furniture in his apartment yet again. Some of the projects he's been tinkering with are listed below. Feel free to explore the site or ask his RAG enabled personal assistant any questions you might have about his profile.
                 </p>
             </div>
             <div class="col-4">
@@ -41,41 +42,61 @@
         <div class="mb-3">
             <div class="d-flex justify-content-between">
                 <p class="form-label">Ask Me Anything (Resume RAG)</p>
-                <a>Documentation</a>    
             </div>
-            <input type="text" class="form-control" id="myInput" placeholder="Enter your question here...">
+            <div class="input-group">
+                <input type="text" class="form-control" id="myInput" placeholder="Enter your question here...">
+                <button class="btn btn-primary" type="button" id="searchBtn">Ask</button>
+            </div>
         </div>
     </div>
 
     <div class="container mt-5">
         <h1>Projects</h1>
         <div class="row">
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
+            <div class="card" style="cursor: pointer;" onclick="goToPage('resume-rag')">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="card-title mb-0">Resume RAG</h5>
+                        <h5>Dec 2025</h5>
                     </div>
+                    <p class="card-text">Description goes here...</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
+            <div class="card" style="cursor: pointer;" onclick="goToPage('task-manager')">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="card-title mb-0">Task Manager</h5>
+                        <h5>Sep 2025</h5>
                     </div>
+                    <p class="card-text">A simple task manager built from the group us in Rails without AI assistance. The app implements a login/logout, front and backend, and email reminders.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
+            <div class="card" style="cursor: pointer;" onclick="goToPage('language-game')">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="card-title mb-0">Lanugage Learning Game</h5>
+                        <h5>Nov 2024</h5>
                     </div>
+                    <p class="card-text">Description goes here...</p>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="card" style="cursor: pointer;" onclick="goToPage('mad-libs')">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="card-title mb-0">Mad Libs Generator</h5>
+                        <h5>Oct 2024</h5>
+                    </div>
+                    <p class="card-text">Description goes here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <footer class="bg-dark text-white py-4 mt-5">
@@ -96,7 +117,13 @@
     <!-- Bootstrap JS (optional, only if you need dropdowns, modals, etc.) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Your JavaScript -->
+    <!-- Load main.js -->
     <script src="main.js"></script>
+
+    <!-- Then load each page file -->
+    <script src="pages/resume-rag.js"></script>
+    <script src="pages/task-manager.js"></script>
+    <script src="pages/language-game.js"></script>
+    <script src="pages/mad-libs.js"></script>
 </body>
 </html>
