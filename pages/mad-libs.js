@@ -2,10 +2,9 @@ pages['mad-libs'] = `
 <div class="container mt-5">
     <button class="btn btn-outline-primary mb-4" onclick="goBack()">← Back</button>
     <h1 class="header">Mad Libs</h1>    
-    <h1>Technical Overview</h1>
+    <h1>Overview</h1>
     <p>This project was built using React, Material UI, and JavaScript. The application is serverless, with API calls to Chatgpt for text generation and Flux for image generation.
     API calls are also made to AWS Lambda for backend logic and AWS S3 for storage. AWS DynamoDB is used to track story views, likes, and other story metrics. User history is cached on the user's browser.</p>
-    <h1>Product Overview</h1>
     <div class="row align-items-start">
         <div class="col-6">
         <p>This website is a platform to create AI generated mad libs stories and share them with others. The story creation process has three steps:
