@@ -6,7 +6,7 @@ pages['mad-libs'] = `
     <p>This project was built using React, Material UI, and JavaScript. The application is serverless, with API calls to Chatgpt for text generation and Flux for image generation.
     API calls are also made to AWS Lambda for backend logic and AWS S3 for storage. AWS DynamoDB is used to track story views, likes, and other story metrics. User history is cached on the user's browser.</p>
     <div class="row align-items-start">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
         <p>This website is a platform to create AI generated mad libs stories and share them with others. The story creation process has three steps:
         <br/><br/>1. Enter the title of your story.
         <br/><br/>This triggers an API call to a LLM that generates a story based on your title.
@@ -16,7 +16,7 @@ pages['mad-libs'] = `
         <br/><br/>The target audience for this product was primarily children and families. The user input fields contain a swear word filter and prompts were structred to keep the output family freindly.
         </p>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
         <img src="assets/mad-libs-example.png" class="w-100" style="height: auto;"> 
         </div>
     </div>
