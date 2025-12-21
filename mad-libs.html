@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Fortuna</title>
+    <link rel="icon" href="assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your Custom CSS (second - so it overrides Bootstrap) -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main-content">
+        <div class="container mt-5">
+            <a href="index.html" class="btn btn-outline-primary mb-4">← Back</a>
+            <h1 class="header">Mad Libs</h1>    
+            <h1>Overview</h1>
+            <p>This project was built using React, Material UI, and JavaScript. The application is serverless, with API calls to Chatgpt for text generation and Flux for image generation.
+            API calls are also made to AWS Lambda for backend logic and AWS S3 for storage. AWS DynamoDB is used to track story views, likes, and other story metrics. User history is cached on the user's browser.</p>
+            <div class="row align-items-start">
+                <div class="col-12 col-md-6">
+                <p>This website is a platform to create AI generated mad libs stories and share them with others. The story creation process has three steps:
+                <br/><br/>1. Enter the title of your story.
+                <br/><br/>This triggers an API call to a LLM that generates a story based on your title.
+                <br/><br/>2. Enter a variety of nouns, verbs, adjectives etc like you would for a mad libs.
+                <br/><br/>After the user submits their story, another API call is made to generate an image that both tells the story and encorporates the user's input.
+                <br/><br/>3. Enjoy your story! Share it and make it public or private for other users to enjoy.
+                <br/><br/>The target audience for this product was primarily children and families. The user input fields contain a swear word filter and prompts were structred to keep the output family freindly.
+                </p>
+                </div>
+                <div class="col-12 col-md-6">
+                <img src="assets/mad-libs-example.png" class="w-100" style="height: auto;"> 
+                </div>
+            </div>
+            <h1>Sample Story</h1>
+            <img src="assets/mad-libs-example-2.png" class="w-100" style="height: auto;"> 
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2025 Peter Fortuna</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://github.com/peter-j-fortuna" class="text-white me-3">GitHub</a>
+                    <a href="https://www.linkedin.com/in/peter-fortuna/" class="text-white me-3">LinkedIn</a>
+                    <a href="mailto:peter.fortuna@gmail.com" class="text-white">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional, only if you need dropdowns, modals, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Load main.js -->
+    <script src="main.js"></script>
+</body>
+</html>
